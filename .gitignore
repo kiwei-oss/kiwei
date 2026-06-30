@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+public/media/.cache/
+public/media/covers/
+public/media/manifest.json
+public/media/mounted/
+public/media/playable/
+public/media/videos/

@@ -1,0 +1,30 @@
+{
+  "name": "personal-anime-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "dev:local": "vite --host 127.0.0.1 --port 5173",
+    "build": "vite build",
+    "enrich:moegirl": "node scripts/enrich-moegirl.js",
+    "preview": "vite preview --host 0.0.0.0",
+    "generate:assets": "node scripts/generate-assets.js",
+    "generate:video": "node scripts/generate-hero-video.js",
+    "import:media": "node scripts/import-media.js",
+    "import:netdisk": "node scripts/import-netdisk.js",
+    "import:openlist": "node scripts/import-openlist.js",
+    "import:local-openlist": "node scripts/import-local-openlist.js",
+    "serve:openlist": "\"/Applications/OpenList-Desktop.app/Contents/MacOS/rclone\" serve http --config \"$HOME/Library/Application Support/OpenList Desktop/rclone.conf\" --addr 127.0.0.1:8787 --read-only --vfs-cache-mode full --vfs-cache-max-size 8G --vfs-cache-max-age 6h --cache-dir ./public/media/.cache/rclone --exclude '.DS_Store' --exclude '._*' OpenList:"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^6.0.5"
+  },
+  "devDependencies": {
+    "ffmpeg-static": "^5.3.0"
+  }
+}

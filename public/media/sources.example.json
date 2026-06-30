@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "id": "quark-direct-demo",
+      "title": "夸克直链示例",
+      "subtitle": "云端资源",
+      "category": "云端导入",
+      "status": "hot",
+      "year": "2026",
+      "rating": "16+",
+      "duration": "24 分钟",
+      "image": "/assets/hero-poster.png",
+      "video": "https://example.com/path/to/video.mp4",
+      "externalUrl": "https://pan.quark.cn/s/xxxx",
+      "match": 90,
+      "label": "云端",
+      "description": "如果 video 是浏览器能直接访问的 mp4/webm 地址，就可以在站内播放。",
+      "tags": ["推荐热门"]
+    }
+  ]
+}
