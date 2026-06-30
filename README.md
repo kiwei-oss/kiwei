@@ -54,11 +54,11 @@ Upload all videos after confirming playback:
 npm run upload:r2
 ```
 
-5. Build and deploy the cloud version:
+5. Build and deploy the R2-enabled cloud version:
 
 ```bash
 npm run build:cloud
-npx wrangler pages deploy dist --project-name kiwei
+npx wrangler pages deploy dist --project-name kiwei --config wrangler.r2.toml
 ```
 
 The Pages Function at `/media-r2/*` reads video files from the private R2 bucket and supports browser range requests.
