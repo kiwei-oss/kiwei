@@ -7,6 +7,8 @@
     "dev": "vite --host 0.0.0.0",
     "dev:local": "vite --host 127.0.0.1 --port 5173",
     "build": "vite build",
+    "build:cloud": "node scripts/prepare-cloud-build.js",
+    "build:cloud-manifest": "node scripts/build-cloud-manifest.js",
     "enrich:moegirl": "node scripts/enrich-moegirl.js",
     "preview": "vite preview --host 0.0.0.0",
     "generate:assets": "node scripts/generate-assets.js",
@@ -15,6 +17,7 @@
     "import:netdisk": "node scripts/import-netdisk.js",
     "import:openlist": "node scripts/import-openlist.js",
     "import:local-openlist": "node scripts/import-local-openlist.js",
+    "upload:r2": "node scripts/upload-r2-videos.js",
     "serve:openlist": "\"/Applications/OpenList-Desktop.app/Contents/MacOS/rclone\" serve http --config \"$HOME/Library/Application Support/OpenList Desktop/rclone.conf\" --addr 127.0.0.1:8787 --read-only --vfs-cache-mode full --vfs-cache-max-size 8G --vfs-cache-max-age 6h --cache-dir ./public/media/.cache/rclone --exclude '.DS_Store' --exclude '._*' OpenList:"
   },
   "dependencies": {
